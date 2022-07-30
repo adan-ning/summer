@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/summer1.css" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript">
+						function dispartime()
+						{
+							var time = new Date();
+							var hour = time.getHours();
+							var minute = time.getMinutes();
+							var second = time.getSeconds();
+							if (minute < 10)
+								minute="0"+minute;
+							if (second < 10)
+								second="0"+second;
+							document.getElementById("time").innerHTML="<span id='hour'>"+hour+"</span>:<span id='minute'>" + minute+"</span>:<span id='second'>"+second+"</span>";
+							
+							var myTime = setInterval("dispartime()",1000);
+						}
+						</script>
+	</head>
+	<body class="bgp" onload="dispartime()">
+		<div class="container">
+			<nav>
+				<ul>
+					<li>首页</li>
+					<li><a href="suixin.html">随心</a></li>
+					<li>分类</li>
+					<li>测试</li>
+					<li>测试</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="shell">
+			<div class="box">
+				<img src="image/lunbo1.jpg" alt="">
+				<!-- <span>Image</span> -->
+			</div>
+			<div class="box">
+				<img src="image/lunbo2.jpg" alt="">
+				<!-- <span>Video</span> -->
+			</div>
+			<div class="box">
+				<img src="image/lunbo3.jpg" alt="">
+				<!-- <span>File</span> -->
+			</div>
+			<div class="box">
+				<img src="image/lunbo4.jpg" alt="">
+				<!-- <span>Music</span> -->
+			</div>
+		</div>
+	</body>
+</html>
