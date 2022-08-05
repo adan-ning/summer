@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/summer1.css" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript">
+						function dispartime()
+						{
+							var time = new Date();
+							var hour = time.getHours();
+							var minute = time.getMinutes();
+							var second = time.getSeconds();
+							if (minute < 10)
+								minute="0"+minute;
+							if (second < 10)
+								second="0"+second;
+							document.getElementById("time").innerHTML="<span id='hour'>"+hour+"</span>:<span id='minute'>" + minute+"</span>:<span id='second'>"+second+"</span>";
+							
+							var myTime = setInterval("dispartime()",1000);
+						}
+						</script>
+	</head>
+	<body class="bgp" onload="dispartime()">
+		<div class="container">
+			<nav>
+				<ul>
+					<li>首页</li>
+					<li><a href="suixin.html">随心</a></li>
+					<li>分类</li>
+					<li>测试</li>
+					<li>测试</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="shell">
+			<div class="box">
+				<img src="image/lunbo1.jpg" alt="">
+			</div>
+			<div class="box">
+				<img src="image/lunbo2.jpg" alt="">
+			</div>
+			<div class="box">
+				<img src="image/lunbo3.jpg" alt="">
+			</div>
+			<div class="box">
+				<img src="image/lunbo4.jpg" alt="">
+			</div>
+		</div>
+		<div class="container2">
+			<div class="card_a">
+				<div class="imgBX">
+					<img src="image/card3.jpg" alt="">
+				</div>
+				<div class="content1">
+				<h2>自我介绍</h2>
+				<p>热爱计算机专业，擅长web前端，会php语言，<br>python语言,C语言</p>
+				</div>
+			</div>
+			<div class="card_a">
+				<div class="imgBX">
+					<img src="image/card1.jpg" alt="">
+				</div>
+				<div class="content1">
+				<h2>Future</h2>
+				<p>以后啊！我想有没有这样一个地方呢<br>，到不止有阳光也有夜、<br>月亮与星星的地方住下来。内心向往着明光身体<br>却又适应了黑暗。</p>
+					</div>
+				</div>
+				<div class="card_a">
+					<div class="imgBX">
+						<img src="image/card2.jpg" alt="">
+					</div>
+					<div class="content1">
+						<h2>Life</h2>
+					<p>一生要走多远的路程，经过多少年才能走到终点。<br>梦想需要多少时间才能慢慢实现。<br>只要肯期待希望就不会幻灭。</p>
+						</div>
+				</div>
+			</div>
+	</body>
+</html>
